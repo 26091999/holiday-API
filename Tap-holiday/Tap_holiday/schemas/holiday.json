@@ -1,0 +1,31 @@
+{
+    "type": ["null", "object"],
+    "additionalProperties": false,
+    "properties": {
+	"string_field": {
+    "Region":{
+        "type": ["null", "string"],
+        "items": [
+        {
+            "type":["null", "object"],
+            "properties": {
+            "Holiday_Name":{
+                "type":["null","string"],
+                "properties":{
+                "datum": {
+                    "type": ["null", "date"]
+                },
+                "note": {
+                    "type": ["null", "string"]
+                }
+                }
+            }
+            }
+        }
+        ]
+    }
+}
+}
+}
+    
+    
