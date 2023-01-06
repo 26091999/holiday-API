@@ -75,12 +75,9 @@ def persist_lines(config, lines):
             # Check if the folder exists
             # ...
 
-            with open("output_test.json", "w", encoding='utf-16') as f:
-                #for year in o['datum']:
-                    #o['datum']=PARAMETER1
-                json.dump(o, f)
-
-                print(line)
+            with open("output_target.json", "a", encoding='utf-16') as f:
+                f.write(json.dumps(o['record']) + "\n")
+                
             state = None
         elif t == 'STATE':
             logger.debug('Setting state to {}'.format(o['value']))
